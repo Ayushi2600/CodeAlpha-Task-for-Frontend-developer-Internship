@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery Task 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="heading-name">
+        <h1>Image Gallery &#128525</h1>
+        <p>Foodie adventures are the best adventures.</p>
+    </header>
+    <main class="gallery-section">
+        <div class="gallery-image">
+            <img src="./images/pizza.jpg" alt="pizza" onclick="openModal('./images/pizza.jpg')">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/pizza1.jpg" alt="pizza" onclick="openModal('./images/pizza1.jpg')">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/sandwich.jpg" alt="sandwich" onclick="openModal('./images/sandwich.jpg')">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/momos.jpg" alt="momos" onclick="openModal('./images/momos.jpg')">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/fries.jpg" alt="fries" onclick="openModal('./images/fries.jpg')">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/burger.jpg" alt="burger" onclick="openModal('./images/burger.jpg')">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/noodle.jpg" alt="noodle" onclick="openModal('./images/noodle.jpg')">
+        </div>
+        <div class="gallery-image">
+            <img src="./images/spring-roll.jpg" alt="spring-roll" onclick="openModal('./images/spring-roll.jpg')">
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">x</span>
+            <img class="modalContent" id="modalImage">
+        </div>
+    </main>
+    <script src="gallery.js"></script>
+</body>
+</html>
